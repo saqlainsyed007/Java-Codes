@@ -1,0 +1,33 @@
+class Item
+{
+	int x;
+	Item()
+	{
+		x=10;
+	}
+	void disp()
+	{
+		System.out.println("Main class"+x);
+	}
+	public class Inner
+	{
+		int y;
+		Inner()
+		{
+			y=20;
+		}
+		void disp()
+		{
+			System.out.println("Inner class"+y);
+		}
+	}
+}
+
+class ItemTest
+{
+	public static void main(String[] args) 
+	{
+		Item it=new Item();
+		Inner in=new Inner();
+	}
+}

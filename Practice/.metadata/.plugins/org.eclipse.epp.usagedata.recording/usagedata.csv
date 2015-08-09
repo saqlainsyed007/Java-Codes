@@ -1,0 +1,51 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views",1438361250926
+started,bundle,org.eclipse.ui.views.log,1.0.200.v20110404,"org.eclipse.ui.views.log",1438361250942
+started,bundle,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"org.eclipse.ui.workbench",1438361250958
+started,bundle,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.workbench.texteditor",1438361250989
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1438361251004
+started,bundle,org.eclipse.update.core,3.2.500.v20110330,"org.eclipse.update.core",1438361251020
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1438361251020
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.201.v201201101553,"org.eclipse.wst.common.project.facet.core",1438361251036
+started,bundle,org.eclipse.wst.web,1.1.501.v201201190400,"org.eclipse.wst.web",1438361251051
+os,sysinfo,,,"win32",1438361251051
+arch,sysinfo,,,"x86_64",1438361251051
+ws,sysinfo,,,"win32",1438361251051
+locale,sysinfo,,,"en_US",1438361251051
+processors,sysinfo,,,"4",1438361251051
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1438361251051
+java.runtime.version,sysinfo,,,"1.7.0-b147",1438361251051
+java.specification.name,sysinfo,,,"Java Platform API Specification",1438361251051
+java.specification.vendor,sysinfo,,,"Oracle Corporation",1438361251051
+java.specification.version,sysinfo,,,"1.7",1438361251051
+java.vendor,sysinfo,,,"Oracle Corporation",1438361251051
+java.version,sysinfo,,,"1.7.0",1438361251051
+java.vm.info,sysinfo,,,"mixed mode",1438361251051
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1438361251051
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1438361251051
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1438361251051
+java.vm.specification.version,sysinfo,,,"1.7",1438361251051
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1438361251051
+java.vm.version,sysinfo,,,"21.0-b17",1438361251051
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1438361260099
+opened,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1438361267852
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1438361267915
+started,bundle,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui",1438361285168
+started,bundle,org.eclipse.wst.server.core,1.1.304.v20120208_1420,"org.eclipse.wst.server.core",1438361285512
+started,bundle,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui",1438361285574
+started,bundle,org.eclipse.jdt.debug.ui,3.6.1.v20111006_r372,"org.eclipse.jdt.debug.ui",1438361285699
+started,bundle,org.eclipse.jdt.junit,3.7.0.v20110928-1453,"org.eclipse.jdt.junit",1438361295979
+executed,command,,,"AUTOGEN:::org.eclipse.jdt.internal.ui.CompilationUnitEditor.ruler.actions/org.eclipse.jdt.internal.ui.javaeditor.JavaSelectRulerAction",1438361320471
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1438361336430
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1438361336742
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1438361337101
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1438361337429
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1438361342187
+closed,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1438361342187
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1438361372638
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1438361374307
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1438361374447
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1438361374931
+stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.700.v201104070312,"org.eclipse.jst.ws.axis.creation.ui",1438361375103
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.505.v201004211805,"org.eclipse.jst.ws.axis.consumption.ui",1438361375103
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.407.v201104071820,"org.eclipse.jst.ws.axis.consumption.core",1438361375103

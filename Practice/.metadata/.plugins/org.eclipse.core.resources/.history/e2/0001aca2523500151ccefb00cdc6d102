@@ -1,0 +1,8 @@
+public class ItemTest
+{
+	private final int id;
+	public ItemTest(int id)
+	{
+		
+	}
+}
