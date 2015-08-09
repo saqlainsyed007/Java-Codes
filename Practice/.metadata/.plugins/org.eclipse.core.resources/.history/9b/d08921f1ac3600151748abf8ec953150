@@ -1,0 +1,62 @@
+package MultiThreading;
+
+import java.util.Scanner;
+
+class Calc
+{
+	static int count=0;
+	int a,b;
+	Calc(int a,int b)
+	{
+		this.a=a;
+		this.b=b;
+	}
+	public int add()
+	{
+		return a+b;
+	}
+	public int sub()
+	{
+		return a-b;
+	}
+}
+
+abstract class ThreadExmpApp extends Calc implements Runnable
+{
+	ThreadExmpApp(int a, int b)
+	{
+		super(a, b);
+	}
+	abstract public void run();
+		
+}
+public class DiffMethodCallThread
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter 2 Numbers");
+		int a=scan.nextInt();
+		int b=scan.nextInt();
+		ThreadExmpApp e1=new ThreadExmpApp(a,b)
+		{
+			public void run()
+			{
+				System.out.println("Thread 1 executing add()");
+				add();
+			}
+		};
+		ThreadExmpApp e2=new ThreadExmpApp(a,b)
+		{
+			public void run()
+			{
+				System.out.println("Thread 2 executing sub()");
+				sub();
+			}
+		};
+		Thread t1=new Thread(e1);
+		Thread t2=new Thread(e2);
+		t1.start();
+		t2.start();
+	}
+}

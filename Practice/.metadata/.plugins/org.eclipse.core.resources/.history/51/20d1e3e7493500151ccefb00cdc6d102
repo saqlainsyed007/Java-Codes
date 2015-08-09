@@ -1,0 +1,15 @@
+public class Hello
+{
+	String title;
+	int value;
+	public Hello()
+	{
+		title+="world";
+	}
+	public Hello(int value)
+	{
+		this.value=value;
+		title="Hello";
+		Hello();
+	}
+}

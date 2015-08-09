@@ -1,0 +1,18 @@
+class TestA
+{
+	public void start()
+	{
+		System.out.println("TEST A");
+	}
+}
+public class TestB extends TestA
+{
+	public void start()
+	{
+		System.out.println("TEST B");
+	}
+	public static void main(String[] args)
+	{
+		((TestA)new TestB()).start();
+	}
+}

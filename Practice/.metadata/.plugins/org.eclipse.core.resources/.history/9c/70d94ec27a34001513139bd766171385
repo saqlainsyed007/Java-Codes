@@ -1,0 +1,148 @@
+public class Subset 
+{
+	int subsets[][];
+	int elements[];
+	int index[];
+	static int x;
+	static int y;
+	static int countP=0,countNP=0;
+	
+	public boolean is_Palindrome(int arr[])
+	{
+		for(int i=0;i<(arr.length)/2;i++)
+		{
+			if(arr[i]!=arr[arr.length-i-1])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	boolean is_ValidIndex(int num)
+	{
+		while(num!=0)
+		{
+			int digit=num%10;
+			if(digit>x-1)
+			{
+				return false;
+			}
+			num=num/10;
+		}
+		return true;
+	}
+	/* public boolean is_Palindrome(String str)
+	{
+		char temp[]=new char[str.length()];
+		int j=0;
+		System.out.println(str.length());
+		for(int i=str.length()-1;i>=0;i--)
+		{
+			temp[j++]=str.charAt(i);
+		}
+		String strrev = new String(temp);
+		if(strrev.equals(str))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}*/
+	
+	public static void main(String[] args)
+	{
+		SomeClass s=new SomeClass();
+		int indices[];
+		int max_index=0;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the number of elements");
+		x=scan.nextInt();
+		s.elements = new int[x];
+		
+		System.out.println("Enter the elements");
+		for(int i=0;i<x;i++)
+		{
+			s.elements[i]=scan.nextInt();
+		}
+		
+		System.out.print("The elements are : ");
+		for(int i=0;i<x;i++)
+		{
+			System.out.print(s.elements[i]);
+		}
+		System.out.println();
+		
+		int n=x-1;
+		System.out.println("Enter the length of the subset");
+		y=scan.nextInt();
+		s.subsets=new int[(int) Math.pow(x,y)][y];
+		
+		if(x<=y)
+		{
+			System.out.println("Cannot Find Subsets. Enter proper length");
+			return;
+		}
+		
+		for(int i=0;i<y;i++)
+		{
+			max_index=max_index*10+n;
+		}
+		System.out.println("Max Index = "+max_index);
+		
+		indices=new int[y];
+		int k=0;
+		for(int i=0;i<=max_index;i++)
+		{
+			int p=i;
+			if(s.is_ValidIndex(i))
+			{
+				for(int j=y-1;j>=0;j--)
+				{
+					int digit=p%10;
+					indices[j]=digit;
+					p=p/10;
+				}
+				System.out.print("indices :");
+				for(int d=0;d<y;d++)
+				{
+					System.out.print(indices[d]);
+				}
+				System.out.println();
+				for(int l=0;l<y;l++)
+				{
+					s.subsets[k][l]=s.elements[indices[l]];
+				}
+				k++;
+			}
+		}
+		System.out.println("The subsets are ");
+		for(int i=0;i<Math.pow(x, y);i++)
+		{
+			for(int j=0;j<y;j++)
+			{
+				System.out.print(s.subsets[i][j]);
+			}
+			System.out.print(" ");
+			if(i>0 && i%10==0)
+			{
+				System.out.println();
+			}
+		}
+		System.out.println();
+		for(int i=0;i<Math.pow(x, y);i++)
+		{
+			if(s.is_Palindrome(s.subsets[i]))
+			{
+				countP++;
+			}
+			else if(!s.is_Palindrome(s.subsets[i]))
+			{
+				countNP++;
+			}
+		}
+		System.out.println("Palindrome Count = "+countP+"\n Non Palindrome Count = "+countNP);
+	}
+}
